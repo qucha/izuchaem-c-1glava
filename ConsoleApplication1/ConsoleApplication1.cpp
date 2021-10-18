@@ -1,10 +1,10 @@
 #include <iostream>
-using namespace std;
+
 
 int main( )
 {
 
-	cout << "game over" << ::endl;
+	std::cout << "game over" <<  std::endl;
 	return 0;
 
 }

@@ -6,31 +6,28 @@ using namespace std;
 int main()
 
 {
-	int score;
-	double distace;
-	char playAgain;
-	bool shieldsup;
-	short lives, alienskilled;
-	score = 0;
-	distace = 1500.42;
-	playAgain = 'y';
-	shieldsup = true;
-	lives = 3;
-	alienskilled = 10;
-	double enginetemp = 6666.66;
+	unsigned int score = 5000;
+	cout << "score:" << score << endl;
+	score = score + 100;
+	cout << "score:" << score << endl;
+	score += 300;
 	cout << "\nscore:" << score << endl;
-	cout << "\ndistance:" << distace << endl;
-	cout << "\nplayagain:" << playAgain << endl;
-	cout << "\nlives:" << alienskilled << endl;
-	cout << "\nalienskilled:" << enginetemp << endl;
-	cout << "\nenginetemp:" << lives << endl;
-	int fuel;
-	cout << "\nHow much fuel?";
-	cin >> fuel;
-	cout << "fuel" << fuel << endl;
-	typedef unsigned short int ushort;
-	ushort bonus = 10;
-	cout << " \nbonus: " << bonus << endl;
+	int lives = 3;
+	++lives;
+	cout << "lives:" << lives << endl;
+	lives = 3;
+	lives++;
+	cout << "lives:" << lives << endl;
+	lives = 3;
+	int bonus = ++lives * 10;
+	cout << "lives,bbonus:" << lives << "." << bonus << endl;
+	lives = 3;
+	bonus = lives++ * 10;
+	cout << "lives,bbonus:" << lives << "." << bonus << endl;
+	score = 4294967295;
+	cout << "\nscore:" << score << endl;
+	++score;
+	cout << "\nscore:" << score << endl;
 	return 0;
 }
 

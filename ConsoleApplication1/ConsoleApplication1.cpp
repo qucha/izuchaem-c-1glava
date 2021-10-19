@@ -6,14 +6,16 @@ using namespace std;
 int main()
 
 {
-	const int ALIEN_POINSTS = 150;
-	int aliensKillied = 10;
-	int score = aliensKillied * ALIEN_POINSTS;
-	cout << "score:" << score << endl;
-	enum difficulty { novice, easy, normal, hard, unbeatablle };
-	difficulty myDifficutly = easy;
-	enum shipCost { figher_cost = 25, bomber_cost, cruise_cost = 50 };
-	shipCost myShipCost = bomber_cost;
-	cout << "\ncena upgrade my floppa " << (cruise_cost - myShipCost) << " Resource Poinsts.\n";
-	return 0;
+
+	int poshel;
+	int nakhuy;
+	int chmo;
+	cout << "skol'ko kushayet pel'meney floppa?" << endl;
+	cin >> poshel;
+	cout << "skol'ko detey kushayet floppa?" << endl;
+	cin >> nakhuy;
+	cout << "skol'ko vesit floppa?" << endl;
+	cin >> chmo;
+	cout << "Floppa lybit vas na " << (poshel + nakhuy + chmo)/3 << " na stolko procentov" << endl;
+	
 }

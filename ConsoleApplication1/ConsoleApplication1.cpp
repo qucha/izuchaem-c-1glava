@@ -6,28 +6,14 @@ using namespace std;
 int main()
 
 {
-	unsigned int score = 5000;
+	const int alien_points = 150;
+	int aliensKillied = 10;
+	int score = aliensKillied * alien_points;
 	cout << "score:" << score << endl;
-	score = score + 100;
-	cout << "score:" << score << endl;
-	score += 300;
-	cout << "\nscore:" << score << endl;
-	int lives = 3;
-	++lives;
-	cout << "lives:" << lives << endl;
-	lives = 3;
-	lives++;
-	cout << "lives:" << lives << endl;
-	lives = 3;
-	int bonus = ++lives * 10;
-	cout << "lives,bbonus:" << lives << "." << bonus << endl;
-	lives = 3;
-	bonus = lives++ * 10;
-	cout << "lives,bbonus:" << lives << "." << bonus << endl;
-	score = 4294967295;
-	cout << "\nscore:" << score << endl;
-	++score;
-	cout << "\nscore:" << score << endl;
+	enum difficulty { novice, easy, normal, hard, unbeatablle };
+	difficulty myDifficutly = easy;
+	enum shipCost { figher_cost = 25, bomber_cost, cruise_cost = 50 };
+	shipCost myShipCost = bomber_cost;
+	cout << "\ncena upgrade my floppa " << (cruise_cost - myShipCost) << " Resource Poinsts.\n";
 	return 0;
 }
-

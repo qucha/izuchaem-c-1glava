@@ -6,9 +6,9 @@ using namespace std;
 int main()
 
 {
-	const int alien_points = 150;
+	const int ALIEN_POINSTS = 150;
 	int aliensKillied = 10;
-	int score = aliensKillied * alien_points;
+	int score = aliensKillied * ALIEN_POINSTS;
 	cout << "score:" << score << endl;
 	enum difficulty { novice, easy, normal, hard, unbeatablle };
 	difficulty myDifficutly = easy;
